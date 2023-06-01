@@ -1,11 +1,9 @@
 import clsx from 'clsx'
 
-import data from './Card.data.json'
-
 import './Card.css'
 
-const Card = () => {
-  const { image, label, title, content } = data
+const Card = ({card}) => {
+  const { image, label, title, content } = card
   return (
     <div
       className="card card__link"
