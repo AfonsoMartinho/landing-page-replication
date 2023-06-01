@@ -1,9 +1,9 @@
 import Costumers from './views/costumer';
-import './App.css';
+import './app.gb.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="costumers-page">
 
       <div style={{ paddingBlock: '25px' }}></div>
 

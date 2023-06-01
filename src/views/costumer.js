@@ -7,8 +7,6 @@ import Pagination from '../components/Pagination/Pagination';
 import { useGetCardsQuery } from '../services/cardsService';
 import { costumerIndustries, costumerRegions, costumerIntegrations } from '../constants/costumerFilters'
 
-import '../App.css';
-
 function Costumers() {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentIndustry, setCurrentIndustry] = useState('');
