@@ -7,10 +7,31 @@ export const cardsService = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: baseCardsUrl }),
   endpoints: builder => ({
     getCards: builder.query({
-      query: () => '/cards',
-      transformResponse: (response) => response.data.list,
+      query: (params) => ({
+        url: '/cards',
+        method: 'POST',
+        body: {
+          category: [],
+          industry: params.industry,
+          integration: params.integration,
+          limit: params.pageSize || 20,
+          order: params.order || 'ASC',
+          order_by: params.orderBy || 'title',
+          page: params.page || 1,
+          post_type: params.postType || ['customers'],
+          region: params.region,
+          search: params.search,
+        },
+      }),
+      transformResponse: (response) => {
+        return {
+          list: response.data.list,
+          size: response.data.count_per.query,
+        }
+      }
     })
-  })
+  }),
+  overrideExisting: false,
 })
 
 export const { useGetCardsQuery } = cardsService
