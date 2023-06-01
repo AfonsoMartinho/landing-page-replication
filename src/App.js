@@ -1,4 +1,4 @@
-import Costumers from './views';
+import Costumers from './views/costumer';
 import './App.css';
 
 function App() {
