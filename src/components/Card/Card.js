@@ -2,11 +2,11 @@ import clsx from 'clsx'
 
 import './Card.css'
 
-const Card = ({card}) => {
+const Card = ({className, card}) => {
   const { image, label, title, content } = card
   return (
     <div
-      className="card card__link"
+      className={clsx("card card__link", className)}
     >
       <div className="card__media">
         <img {...image} />
