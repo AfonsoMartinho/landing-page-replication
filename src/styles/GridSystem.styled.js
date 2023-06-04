@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const StyledRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   position: relative;
   margin-right: -1%;
   margin-left: -1%;
@@ -21,6 +20,8 @@ export const StyledRow = styled.div`
 export const StyledCol = styled.div`
     flex-basis: 0;
     flex-grow: 1;
+    position: relative;
+    width: 100%;
     max-width: 100%;
     padding-right: 1%;
     padding-left: 1%;
@@ -29,27 +30,25 @@ export const StyledCol = styled.div`
   ${({ colSize }) =>
     colSize &&
     `
-    flex-basis: ${(colSize / 12) * 100}% !important;
+    flex: 0 0 ${(colSize / 12) * 100}% !important;
     max-width: ${(colSize / 12) * 100}% !important;
   `}
 
   /* Additional styling for different screen sizes */
-  ${({ sm, theme }) => {
-    console.log(theme.breakpoints.sm)
-    return sm &&
+  ${({ sm, theme }) => 
+    sm &&
     `
     @media (min-width: ${theme.breakpoints.sm}) {
-      flex-basis: ${(sm / 12) * 100}% !important;
+      flex: 0 0 ${(sm / 12) * 100}% !important;
       max-width: ${(sm / 12) * 100}% !important;
     }
   `}
-  }
 
   ${({ md, theme }) =>
     md &&
     `
     @media (min-width: ${ theme.breakpoints.md}) {
-      flex-basis: ${(md / 12) * 100}% !important;
+      flex: 0 0 ${(md / 12) * 100}% !important;
       max-width: ${(md / 12) * 100}% !important;
     }
   `}
@@ -58,7 +57,7 @@ export const StyledCol = styled.div`
     lg &&
     `
     @media (min-width: ${ theme.breakpoints.lg}) {
-      flex-basis: ${(lg / 12) * 100}% !important;
+      flex: 0 0 ${(lg / 12) * 100}% !important;
       max-width: ${(lg / 12) * 100}% !important;
     }
   `}
@@ -67,7 +66,7 @@ export const StyledCol = styled.div`
       xl &&
       `
       @media (min-width: ${ theme.breakpoints.xl}) {
-        flex-basis: ${(xl / 12) * 100}% !important;
+        flex: 0 0 ${(xl / 12) * 100}% !important;
         max-width: ${(xl / 12) * 100}% !important;
       }
     `}
@@ -76,7 +75,7 @@ export const StyledCol = styled.div`
         xxl &&
         `
         @media (min-width:${ theme.breakpoints.xxl}) {
-          flex-basis: ${(xxl / 12) * 100}% !important;
+          flex: 0 0 ${(xxl / 12) * 100}% !important;
           max-width: ${(xxl / 12) * 100}% !important;
         }
       `}

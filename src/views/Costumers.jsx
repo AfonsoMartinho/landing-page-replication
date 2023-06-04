@@ -10,13 +10,18 @@ import { costumerIndustries, costumerRegions, costumerIntegrations } from '../co
 
 import styled from "styled-components";
 
-// The wrapper component styles
+// The Costumer wrapper component styled
 const StyledCostumersWrapper = styled(StyledCol)`
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1% 0 1%;
   max-width: 1920px;
+
+  @media(max-width: ${props => props.theme.breakpoints.sm}) {
+    padding-right:1.5rem;
+    padding-left: 1.5rem
+  }
 `;
 
 function Costumers() {
@@ -41,44 +46,44 @@ function Costumers() {
   
 
   return (
-    <StyledCostumersWrapper colSize={12} sm={10} offsetSm={1}>
+    <StyledCostumersWrapper>
       <StyledRow>
-        <StyledCol>
-          <section id="costumer-fields" style={{ marginBottom: '2rem' }}>
-            <StyledRow>
-              <StyledCol colSize={12} sm={4}>
-                <Dropdown options={costumerIndustries} title="All Industries" onFieldsChange={(val) => setCurrentIndustry(val)}/>
-              </StyledCol>
-              <StyledCol colSize={12} sm={4}>  
-                <Dropdown options={costumerIntegrations} title="All Integrations" onFieldsChange={(val) => setCurrentIntegration(val)}/>
-              </StyledCol>
-              <StyledCol colSize={12} sm={4}>
-                <Dropdown options={costumerRegions} title="All Regions" onFieldsChange={(val) => setCurrentRegion(val)}/>
-              </StyledCol>
-            </StyledRow>
-          </section>
-          <section id="costumers">
-            <StyledRow  style={{ position: 'relative' }}>
-              {(!isLoading && !isFetching && !isError) && 
-                cardsList && (
-                    cardsList.map((card,i) => (
-                      <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
-                        <Card key={`${card.title}-${i}`} card={card}/>
-                      </StyledCol>
-                    ))
-                  )}
-                  {(cardsList.length === 0) && (
-                    <h1>EMPTY</h1>
-                  )}
-              { (isLoading || isFetching) && (
-                <div>loading...</div>
-              )}
-              
-              { isError && (
-                <div>{error}</div>
-              )}
-            </StyledRow>
-          </section>
+        <StyledCol offsetSm={1} colSize={12} sm={10}>
+          <StyledRow>
+            <StyledCol > 
+              <StyledRow as="section" id="costumer-fields" style={{ marginBottom: '2rem' }}>
+                <StyledCol colSize={12} sm={4}>
+                  <Dropdown options={costumerIndustries} title="All Industries" onFieldsChange={(val) => setCurrentIndustry(val)}/>
+                </StyledCol>
+                <StyledCol colSize={12} sm={4}>
+                  <Dropdown options={costumerRegions} title="All Regions" onFieldsChange={(val) => setCurrentRegion(val)}/>
+                </StyledCol>
+                <StyledCol colSize={12} sm={4}>  
+                  <Dropdown options={costumerIntegrations} title="All Integrations" onFieldsChange={(val) => setCurrentIntegration(val)}/>
+                </StyledCol>
+              </StyledRow>
+              <StyledRow as="section" id="costumers"  style={{ position: 'relative' }}>
+                {(!isLoading && !isFetching && !isError) && 
+                  cardsList && (
+                      cardsList.map((card,i) => (
+                        <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
+                          <Card key={`${card.title}-${i}`} card={card}/>
+                        </StyledCol>
+                      ))
+                    )}
+                    {(cardsList.length === 0) && (
+                      <h1>EMPTY</h1>
+                    )}
+                { (isLoading || isFetching) && (
+                  <div>loading...</div>
+                )}
+                
+                { isError && (
+                  <div>{error}</div>
+                )}
+              </StyledRow>
+            </StyledCol>
+          </StyledRow>
           <div style={{ marginInline: '10%' }}>
             <Pagination
               className="pagination-bar"

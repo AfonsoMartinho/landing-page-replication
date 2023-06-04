@@ -10,6 +10,11 @@ export const StyledDropdown = styled.div`
   position: relative;
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+      margin-bottom: 0;
+  }
 
   &:hover {
     color: ${props => props.theme.colors.hover};
