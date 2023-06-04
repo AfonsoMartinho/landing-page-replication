@@ -39,6 +39,7 @@ export const colorPalete = {
     warningLight: '#fc0',
     white: '#fff',
     transparent: 'rgba(0,0,0,0)',
+    transparentPurple: 'rgba(191,145,252,.4)',
 }
 
 const theme = {
@@ -46,6 +47,7 @@ const theme = {
         brand: colorPalete.purple600,
         hover: colorPalete.white,
         hoverBg: colorPalete.purple500,
+        hoverBgLight: colorPalete.transparentPurple,
         hoverBrand: colorPalete.purple500,
         disabled: colorPalete.white,
         disabledBg: colorPalete.purple300,
