@@ -66,11 +66,6 @@ const theme = {
         lg: 992,
         xl: 1440,
         xxl: 1920,
-    },
-    fonts:{
-        // gilroy: `'__gilroyFont_e0bf30', '__gilroyFont_Fallback_e0bf30', arial, futura`,
-        // inter: '`__Inter_cc477d`, `__Inter_Fallback_cc477d`, helvetica, arial',
-        // talkdesk: `'__iconsFont_89d5cb', '__iconsFont_Fallback_89d5cb'`,
     }
 }
 
