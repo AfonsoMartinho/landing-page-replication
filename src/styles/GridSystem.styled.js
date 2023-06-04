@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from './Theme.styled'
 
 // The row container component
 export const StyledRow = styled.div`
@@ -35,88 +34,90 @@ export const StyledCol = styled.div`
   `}
 
   /* Additional styling for different screen sizes */
-  ${({ sm }) =>
-    sm &&
+  ${({ sm, theme }) => {
+    console.log(theme.breakpoints.sm)
+    return sm &&
     `
-    @media (min-width: ${theme.breakpoints.sm}px) {
+    @media (min-width: ${theme.breakpoints.sm}) {
       flex-basis: ${(sm / 12) * 100}% !important;
       max-width: ${(sm / 12) * 100}% !important;
     }
   `}
+  }
 
-  ${({ md }) =>
+  ${({ md, theme }) =>
     md &&
     `
-    @media (min-width: ${theme.breakpoints.md}px) {
+    @media (min-width: ${ theme.breakpoints.md}) {
       flex-basis: ${(md / 12) * 100}% !important;
       max-width: ${(md / 12) * 100}% !important;
     }
   `}
 
-  ${({ lg }) =>
+  ${({ lg, theme }) =>
     lg &&
     `
-    @media (min-width: ${theme.breakpoints.lg}px) {
+    @media (min-width: ${ theme.breakpoints.lg}) {
       flex-basis: ${(lg / 12) * 100}% !important;
       max-width: ${(lg / 12) * 100}% !important;
     }
   `}
 
-  ${({ xl }) =>
+  ${({ xl, theme }) =>
       xl &&
       `
-      @media (min-width: ${theme.breakpoints.xl}px) {
+      @media (min-width: ${ theme.breakpoints.xl}) {
         flex-basis: ${(xl / 12) * 100}% !important;
         max-width: ${(xl / 12) * 100}% !important;
       }
     `}
 
-${({ xxl }) =>
-      xxl &&
-      `
-      @media (min-width: ${theme.breakpoints.xxl}px) {
-        flex-basis: ${(xxl / 12) * 100}% !important;
-        max-width: ${(xxl / 12) * 100}% !important;
-      }
-    `}
+  ${({ xxl, theme }) =>
+        xxl &&
+        `
+        @media (min-width:${ theme.breakpoints.xxl}) {
+          flex-basis: ${(xxl / 12) * 100}% !important;
+          max-width: ${(xxl / 12) * 100}% !important;
+        }
+      `}
 
   /* Offset styling */
-  ${({ offsetSm }) =>
+  ${({ offsetSm, theme }) =>
     offsetSm &&
     `
-    @media (min-width: ${theme.breakpoints.sm}px) {
+    @media (min-width: ${ theme.breakpoints.sm}) {
       margin-left: ${(offsetSm / 12) * 100}% !important;
     }
   `}
 
-  ${({ offsetMd }) =>
+  ${({ offsetMd, theme }) =>
     offsetMd &&
     `
-    @media (min-width: ${theme.breakpoints.md}px) {
+    @media (min-width: ${ theme.breakpoints.md}) {
       margin-left: ${(offsetMd / 12) * 100}% !important;
     }
   `}
 
-  ${({ offsetLg }) =>
+  ${({ offsetLg, theme }) =>
       offsetLg &&
       `
-      @media (min-width: ${theme.breakpoints.lg}px) {
+      @media (min-width: ${ theme.breakpoints.lg}) {
         margin-left: ${(offsetLg / 12) * 100}% !important;
       }
     `}
 
-  ${({ offsetXl }) =>
+  ${({ offsetXl, theme }) =>
     offsetXl &&
     `
-    @media (min-width: ${theme.breakpoints.xl}px) {
+    @media (min-width: ${ theme.breakpoints.xl}) {
       margin-left: ${(offsetXl / 12) * 100}% !important;
     }
   `}
 
-${({ offsetXxl }) =>
+${({ offsetXxl, theme }) =>
     offsetXxl &&
     `
-    @media (min-width: ${theme.breakpoints.xxl}px) {
+    @media (min-width: ${ theme.breakpoints.xxl}) {
       margin-left: ${(offsetXxl / 12) * 100}% !important;
     }
   `}

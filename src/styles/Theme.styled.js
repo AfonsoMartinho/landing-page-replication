@@ -38,6 +38,7 @@ export const colorPalete = {
     warningDark: '#edbd00',
     warningLight: '#fc0',
     white: '#fff',
+    transparent: 'rgba(0,0,0,0)',
 }
 
 const theme = {
@@ -58,14 +59,22 @@ const theme = {
         warning: colorPalete.warningLight,
         error: colorPalete.errorLight,
         background: colorPalete.white,
+        transparent: colorPalete.transparent,
     },
     breakpoints: {
-        xs: 0,
-        sm: 576,
-        md: 768,
-        lg: 992,
-        xl: 1440,
-        xxl: 1920,
+        xs: '0px',
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1440px',
+        xxl: '1920px',
+    },
+    fontSizes: {
+        label: {
+            xs: '0.75rem',
+            md: '0.875rem',
+            xxl: '1rem',
+        }
     }
 }
 
