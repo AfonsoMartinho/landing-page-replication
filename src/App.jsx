@@ -1,7 +1,6 @@
+import styled from 'styled-components';
 import Costumers from './views/Costumers';
 import './App.css';
-
-import styled from "styled-components";
 
 // The row container component
 export const StyledContainer = styled.div`

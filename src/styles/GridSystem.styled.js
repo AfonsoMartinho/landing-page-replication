@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from './Theme.styled'
 
 // The row container component
 export const StyledRow = styled.div`
@@ -37,7 +38,7 @@ export const StyledCol = styled.div`
   ${({ sm }) =>
     sm &&
     `
-    @media (min-width: 576px) {
+    @media (min-width: ${theme.breakpoints.sm}px) {
       flex-basis: ${(sm / 12) * 100}% !important;
       max-width: ${(sm / 12) * 100}% !important;
     }
@@ -46,7 +47,7 @@ export const StyledCol = styled.div`
   ${({ md }) =>
     md &&
     `
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.breakpoints.md}px) {
       flex-basis: ${(md / 12) * 100}% !important;
       max-width: ${(md / 12) * 100}% !important;
     }
@@ -55,7 +56,7 @@ export const StyledCol = styled.div`
   ${({ lg }) =>
     lg &&
     `
-    @media (min-width: 992px) {
+    @media (min-width: ${theme.breakpoints.lg}px) {
       flex-basis: ${(lg / 12) * 100}% !important;
       max-width: ${(lg / 12) * 100}% !important;
     }
@@ -64,9 +65,18 @@ export const StyledCol = styled.div`
   ${({ xl }) =>
       xl &&
       `
-      @media (min-width: 1440px) {
+      @media (min-width: ${theme.breakpoints.xl}px) {
         flex-basis: ${(xl / 12) * 100}% !important;
         max-width: ${(xl / 12) * 100}% !important;
+      }
+    `}
+
+${({ xxl }) =>
+      xxl &&
+      `
+      @media (min-width: ${theme.breakpoints.xxl}px) {
+        flex-basis: ${(xxl / 12) * 100}% !important;
+        max-width: ${(xxl / 12) * 100}% !important;
       }
     `}
 
@@ -74,7 +84,7 @@ export const StyledCol = styled.div`
   ${({ offsetSm }) =>
     offsetSm &&
     `
-    @media (min-width: 576px) {
+    @media (min-width: ${theme.breakpoints.sm}px) {
       margin-left: ${(offsetSm / 12) * 100}% !important;
     }
   `}
@@ -82,7 +92,7 @@ export const StyledCol = styled.div`
   ${({ offsetMd }) =>
     offsetMd &&
     `
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.breakpoints.md}px) {
       margin-left: ${(offsetMd / 12) * 100}% !important;
     }
   `}
@@ -90,7 +100,7 @@ export const StyledCol = styled.div`
   ${({ offsetLg }) =>
       offsetLg &&
       `
-      @media (min-width: 992px) {
+      @media (min-width: ${theme.breakpoints.lg}px) {
         margin-left: ${(offsetLg / 12) * 100}% !important;
       }
     `}
@@ -98,8 +108,16 @@ export const StyledCol = styled.div`
   ${({ offsetXl }) =>
     offsetXl &&
     `
-    @media (min-width: 1440px) {
+    @media (min-width: ${theme.breakpoints.xl}px) {
       margin-left: ${(offsetXl / 12) * 100}% !important;
+    }
+  `}
+
+${({ offsetXxl }) =>
+    offsetXxl &&
+    `
+    @media (min-width: ${theme.breakpoints.xxl}px) {
+      margin-left: ${(offsetXxl / 12) * 100}% !important;
     }
   `}
 `;
