@@ -1,5 +1,4 @@
 import Costumers from './views/Costumers';
-import './App.css';
 
 function App() {
   return (
