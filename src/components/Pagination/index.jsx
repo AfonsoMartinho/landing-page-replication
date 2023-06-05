@@ -1,6 +1,5 @@
 import { DOTS, usePagination } from './usePagination';
-
-import "./Pagination.css";
+import { StyledMobilePaginationItem, StyledPaginationArrow, StyledPaginationContainer, StyledPaginationItem } from './Paginmation.styled'
 
 const Pagination = props => {
   const {
@@ -32,35 +31,37 @@ const Pagination = props => {
 
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
-    <ul className="pagination-container">
-      <li
-        className={`pagination-item ${currentPage === 1 ? "disabled" : ""}`}
+    <StyledPaginationContainer className="pagination-container">
+      { (currentPage !== 1) && (
+        <StyledPaginationArrow
         onClick={onPrevious}
-      >
-        <div className="arrow left" />
-      </li>
+        $arrow="left" />
+      )}
       {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
           return <li className="pagination-item dots" key={index} >&#8230;</li>;
         }
 
         return (
-          <li
-            className={`pagination-item ${pageNumber === currentPage ? "selected" : ""}`}
+          <StyledPaginationItem
+            $active={pageNumber === currentPage}
             onClick={() => onPageChange(pageNumber)}
             key={index}
-          >
+            >
             {pageNumber}
-          </li>
+          </StyledPaginationItem>
         );
       })}
-      <li
-        className={`pagination-item ${currentPage === lastPage ? "disabled" : ""}`}
-        onClick={onNext}
-      >
-        <div className="arrow right" />
-      </li>
-    </ul>
+
+      <StyledMobilePaginationItem>
+        {`PAGE ${currentPage} / ${lastPage}`}
+      </StyledMobilePaginationItem>
+      { (currentPage !== lastPage) && (
+        <StyledPaginationArrow
+          onClick={onNext}
+          $arrow="rigth" />
+      )}
+    </StyledPaginationContainer>
   );
 };
 
