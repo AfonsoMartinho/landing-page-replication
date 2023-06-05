@@ -26,6 +26,10 @@ const StyledCostumersWrapper = styled(StyledCol)`
   }
 `;
 
+const StyledCostumersFields = styled(StyledRow) `
+  margin-bottom: 2rem;
+`
+
 function Costumers() {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentIndustry, setCurrentIndustry] = useState('');
@@ -47,31 +51,20 @@ function Costumers() {
     setCurrentPage(1)
   }, [currentIndustry, currentIntegration, currentRegion])
 
-  // renders the cards list or mock data while handling the loader logic
+  // renders the cards list or mock data 
+  // handling the loader logic
   const CardsList = () => {
-    if (cardsList.length !== 0) {
+    const listToRender = (cardsList.length !== 0) ? cardsList : mockCards;
       return (
       <>
-        {(cardsList.map((card,i) => (
+        {(listToRender.map((card,i) => (
           <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}  key={`${card.title}-${i}`}>
             <Card card={card}/>
           </StyledCol>
         )))}
-        <Loader show={isFetching || isLoading} />
+        <Loader show={(cardsList.length !== 0) ? (isFetching || isLoading) : true} />
       </>
-    )} else { 
-      // this will display before we fetch any data
-      return (
-        <>
-          {(mockCards.map((card,i) => (
-            <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
-              <Card key={`Lazycard-${i}`} card={card}/> 
-            </StyledCol>
-          )))}
-          <Loader show/>
-        </>
-      )
-    }
+    )
   }
 
   return (
@@ -80,7 +73,7 @@ function Costumers() {
         <StyledCol offsetSm={1} colSize={12} sm={10}>
           <StyledRow>
             <StyledCol> 
-              <StyledRow as="section" id="costumer-fields" style={{ marginBottom: '2rem' }}>
+              <StyledCostumersFields as="section" id="costumer-fields">
                 <StyledCol colSize={12} sm={4}>
                   <Dropdown options={costumerIndustries} title="All Industries" onFieldsChange={(val) => setCurrentIndustry(val)}/>
                 </StyledCol>
@@ -90,13 +83,9 @@ function Costumers() {
                 <StyledCol colSize={12} sm={4}>  
                   <Dropdown options={costumerIntegrations} title="All Integrations" onFieldsChange={(val) => setCurrentIntegration(val)}/>
                 </StyledCol>
-              </StyledRow>
-              <StyledRow as="section" id="costumers"  style={{ position: 'relative' }}>
-                { !isError ? (
-                  <CardsList />
-                ) : (
-                  <div>{error}</div>
-                )}
+              </StyledCostumersFields>
+              <StyledRow as="section" id="customers">
+                {!isError ? <CardsList /> : <div>{error.data.message}</div>}
               </StyledRow>
             </StyledCol>
           </StyledRow>
@@ -105,8 +94,7 @@ function Costumers() {
             currentPage={currentPage}
             totalCount={cardListSize}
             pageSize={20}
-            onPageChange={page => setCurrentPage(page)}
-          />
+            onPageChange={page => setCurrentPage(page)} />
         </StyledCol>
       </StyledRow>
     </StyledCostumersWrapper>

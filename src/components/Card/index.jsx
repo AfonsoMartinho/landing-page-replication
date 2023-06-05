@@ -2,7 +2,7 @@ import { StyledCard, StyledCardLink, StyledCardMedia, StyleCardImage, StyleCardL
 
 const Card = ({card}) => {
   const { image, label, title, content, link } = card
-  console.log(card)
+
   return (
     <StyledCard>
       <StyledCardLink traget={link.target} href={link.url}>
