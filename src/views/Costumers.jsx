@@ -7,6 +7,7 @@ import Pagination from '../components/Pagination';
 import Loader from '../components/Loader'
 import { costumerIndustries, costumerRegions, costumerIntegrations } from '../constants/costumerFilters'
 import { StyledRow, StyledCol } from '../styles/GridSystem.styled'
+import mockCards from '../mockData/cards.data.json'
 
 
 import styled from "styled-components";
@@ -40,7 +41,6 @@ function Costumers() {
   
   const cardsList = cards.list || [];
   const cardListSize = cards.size || 0;
-  const pageSize = 20;
 
 
   useEffect(() => {
@@ -53,23 +53,22 @@ function Costumers() {
       return (
       <>
         {(cardsList.map((card,i) => (
-          <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
-            <Card key={`${card.title}-${i}`} card={card}/>
+          <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}  key={`${card.title}-${i}`}>
+            <Card card={card}/>
           </StyledCol>
         )))}
         <Loader show={isFetching || isLoading} />
       </>
     )} else { 
       // this will display before we fetch any data
-      // TODO use mock cards data here
       return (
         <>
-          {Array.from({ length: 20 }, (data, i) => (
+          {(mockCards.map((card,i) => (
             <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
-              <Card key={`Lazycard-${i}`} card={data}/> 
+              <Card key={`Lazycard-${i}`} card={card}/> 
             </StyledCol>
-          ))}
-          <Loader show={true}/>
+          )))}
+          <Loader show/>
         </>
       )
     }
@@ -105,7 +104,7 @@ function Costumers() {
             className="pagination-bar"
             currentPage={currentPage}
             totalCount={cardListSize}
-            pageSize={pageSize}
+            pageSize={20}
             onPageChange={page => setCurrentPage(page)}
           />
         </StyledCol>

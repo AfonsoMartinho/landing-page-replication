@@ -1,0 +1,602 @@
+[
+    {
+        "title": "University of Iowa Tippie College of Business",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/tippie-iowa-customer-1740x1160.webp",
+            "alt": "Tippie Iowa Customer",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-05-03",
+        "link": {
+            "url": "/customers/university-of-iowa-tippie-college-of-business/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "JK Moving Services",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/jk-moving-customer-moving-services-1740x1160.webp",
+            "alt": "Jk Moving Customer Moving Services",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-05-02",
+        "link": {
+            "url": "/customers/jk-moving-services/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Integra Managed Care",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/05/28041956/The-patient-experience-1740x1160.jpg",
+            "alt": "The Patient Experience",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-02-16",
+        "link": {
+            "url": "/customers/integra-managed-care/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Alarm.com",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/alarm-com-customer-story-1740x1160.jpg",
+            "alt": "Alarm Com Customer Story",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-02-16",
+        "link": {
+            "url": "/customers/alarm-com/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Apple Federal Credit Union",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/apple-federal-credit-union-customer-1740x1160.jpg",
+            "alt": "Apple Federal Credit Union Customer",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-01-24",
+        "link": {
+            "url": "/customers/apple-federal-credit-union/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Memorial Healthcare System",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/memorial-healthcare-system-customers-talkdesk-1740x1160.jpg",
+            "alt": "Memorial Healthcare System Customers Talkdesk",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2023-01-04",
+        "link": {
+            "url": "/customers/memorial-healthcare-system/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "WaFd Bank",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/wafdbank-customer-image-1740x1160.jpg",
+            "alt": "Wafdbank Customer Image",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-12-26",
+        "link": {
+            "url": "/customers/wafd-bank/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "EGEA Group",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/egea-customer-story-1740x1160.jpg",
+            "alt": "Egea Customer Story",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-12-05",
+        "link": {
+            "url": "/customers/egea-group/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "SD Worx",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/sdworx-customer-image-1740x1160.jpg",
+            "alt": "Sdworx Customer Image",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-10-03",
+        "link": {
+            "url": "/customers/sd-worx/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Farfetch",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/farfetch-customer-image-1740x1160.jpg",
+            "alt": "Farfetch Customer Image",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-07-12",
+        "link": {
+            "url": "/customers/farfetch/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Accenture",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/accenture-customer-image-1740x1160.jpg",
+            "alt": "Accenture Customer Image",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-04-12",
+        "link": {
+            "url": "/customers/accenture/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "GlassesUSA.com",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/glassesUSA-customer-image-1740x1160.jpg",
+            "alt": "Glassesusa Customer Image",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-04-11",
+        "link": {
+            "url": "/customers/glassesusa-com/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Carbon Health",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/25013207/health-plan-member-experience-1740x1160.jpg",
+            "alt": "Health Plan Member Experience",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-03-03",
+        "link": {
+            "url": "/customers/carbon-health/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Lemonade",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/lemonade-connection-across-multicultural-cx-teams-1740x1160.jpg",
+            "alt": "Lemonade Connection Across Multicultural Cx Teams",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-02-04",
+        "link": {
+            "url": "/customers/lemonade/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Force Therapeutics",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/force-therapeutics-hero-1740x1160.jpg",
+            "alt": "Force Therapeutics Hero",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2022-01-21",
+        "link": {
+            "url": "/customers/force-therapeutics/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Assa Abloy Global Solutions Hospitality",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/assa-abloy-global-solutions-hospitality-e1640100052804-1740x1160.jpg",
+            "alt": "Assa Abloy Global Solutions Hospitality",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2021-12-21",
+        "link": {
+            "url": "/customers/assa-abloy-global-solutions-hospitality/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "GetYourGuide",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/getyourguide-customer-story-1-1740x1160.jpg",
+            "alt": "Getyourguide Customer Story",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2021-10-27",
+        "link": {
+            "url": "/customers/getyourguide/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Travelopia",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/travelopia-customers-travel-1740x1160.jpg",
+            "alt": "Travelopia Customers Travel",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2021-10-26",
+        "link": {
+            "url": "/customers/travelopia/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Virtuagym",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/virtuagym-app-mobile-1740x1160.jpg",
+            "alt": "Virtuagym App Mobile",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2021-09-28",
+        "link": {
+            "url": "/customers/virtuagym/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    },
+    {
+        "title": "Glovo",
+        "image": {
+            "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/glovo-customer-1740x1160.jpg",
+            "alt": "Glovo Customer",
+            "broken_image": {
+                "src": "https://infra-cloudfront-talkdeskcom.svc.talkdeskapp.com/talkdesk_com/2021/06/16035537/broken-image-3_2.png",
+                "alt": "Broken Image 3 2"
+            }
+        },
+        "author": null,
+        "label": {
+            "text": "Customer Story",
+            "has_link": false,
+            "url": ""
+        },
+        "tag": "",
+        "date": "",
+        "datetime": "2021-09-28",
+        "link": {
+            "url": "/customers/glovo/",
+            "label": "Read customer story",
+            "target": "_self"
+        },
+        "content": {
+            "text": "",
+            "class": "card__description -small"
+        },
+        "type": "card--resources"
+    }
+]
