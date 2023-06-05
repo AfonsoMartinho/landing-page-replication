@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 
-import Card from '../components/Card/Card';
-import Dropdown from '../components/Dropdown/Dropdown';
-import { StyledRow, StyledCol } from '../styles/GridSystem.styled'
-import Pagination from '../components/Pagination/Pagination';
 import { useGetCardsQuery } from '../services/cardsService';
+import Card from '../components/Card';
+import Dropdown from '../components/Dropdown';
+import Pagination from '../components/Pagination';
+import Loader from '../components/Loader'
 import { costumerIndustries, costumerRegions, costumerIntegrations } from '../constants/costumerFilters'
+import { StyledRow, StyledCol } from '../styles/GridSystem.styled'
 
 
 import styled from "styled-components";
@@ -36,21 +37,50 @@ function Costumers() {
     isError,
     error,
   }  = useGetCardsQuery({page: currentPage, industry: currentIndustry, region: currentRegion, integration: currentIntegration});
-
+  
   const cardsList = cards.list || [];
   const cardListSize = cards.size || 0;
+  const pageSize = 20;
+
 
   useEffect(() => {
     setCurrentPage(1)
   }, [currentIndustry, currentIntegration, currentRegion])
-  
+
+  // renders the cards list or mock data while handling the loader logic
+  const CardsList = () => {
+    if (cardsList.length !== 0) {
+      return (
+      <>
+        {(cardsList.map((card,i) => (
+          <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
+            <Card key={`${card.title}-${i}`} card={card}/>
+          </StyledCol>
+        )))}
+        <Loader show={isFetching || isLoading} />
+      </>
+    )} else { 
+      // this will display before we fetch any data
+      // TODO use mock cards data here
+      return (
+        <>
+          {Array.from({ length: 20 }, (data, i) => (
+            <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
+              <Card key={`Lazycard-${i}`} card={data}/> 
+            </StyledCol>
+          ))}
+          <Loader show={true}/>
+        </>
+      )
+    }
+  }
 
   return (
     <StyledCostumersWrapper>
       <StyledRow>
         <StyledCol offsetSm={1} colSize={12} sm={10}>
           <StyledRow>
-            <StyledCol > 
+            <StyledCol> 
               <StyledRow as="section" id="costumer-fields" style={{ marginBottom: '2rem' }}>
                 <StyledCol colSize={12} sm={4}>
                   <Dropdown options={costumerIndustries} title="All Industries" onFieldsChange={(val) => setCurrentIndustry(val)}/>
@@ -63,36 +93,21 @@ function Costumers() {
                 </StyledCol>
               </StyledRow>
               <StyledRow as="section" id="costumers"  style={{ position: 'relative' }}>
-                {(!isLoading && !isFetching && !isError) && 
-                  cardsList && (
-                      cardsList.map((card,i) => (
-                        <StyledCol colSize={12} sm={6} md={6} lg={6} xl={3}>
-                          <Card key={`${card.title}-${i}`} card={card}/>
-                        </StyledCol>
-                      ))
-                    )}
-                    {(cardsList.length === 0) && (
-                      <h1>EMPTY</h1>
-                    )}
-                { (isLoading || isFetching) && (
-                  <div>loading...</div>
-                )}
-                
-                { isError && (
+                { !isError ? (
+                  <CardsList />
+                ) : (
                   <div>{error}</div>
                 )}
               </StyledRow>
             </StyledCol>
           </StyledRow>
-          <div style={{ marginInline: '10%' }}>
-            <Pagination
-              className="pagination-bar"
-              currentPage={currentPage}
-              totalCount={cardListSize}
-              pageSize={20}
-              onPageChange={page => setCurrentPage(page)}
-            />
-          </div>
+          <Pagination
+            className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={cardListSize}
+            pageSize={pageSize}
+            onPageChange={page => setCurrentPage(page)}
+          />
         </StyledCol>
       </StyledRow>
     </StyledCostumersWrapper>
