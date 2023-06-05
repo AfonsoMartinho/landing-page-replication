@@ -7,7 +7,7 @@ import Pagination from '../components/Pagination';
 import Loader from '../components/Loader'
 import { costumerIndustries, costumerRegions, costumerIntegrations } from '../constants/costumerFilters'
 import { StyledRow, StyledCol } from '../styles/GridSystem.styled'
-import mockCards from '../mockData/cards.data.json'
+import mockCards from '../mockData/CardsList.data.json'
 
 
 import styled from "styled-components";

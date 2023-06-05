@@ -1,6 +1,8 @@
+import React from 'react';
 import { StyledCard, StyledCardLink, StyledCardMedia, StyleCardImage, StyleCardLabel, StyledCardH5 } from './Card.styled'
 
 const Card = ({card}) => {
+  if(!card || !card.title) return(<></>)
   const { image, label, title, content, link } = card
 
   return (
