@@ -2,6 +2,14 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const baseCardsUrl = 'https://cms.talkdesk.com/wp-json/web-api/v1/content'
 
+
+/**
+ * cardsService createApi() Redux method
+ * Used for getting Cards List from talkdesk api endpoint
+ * @returns getCards query endpoint
+ * useGetCardsQuery @param { Object } params recives a params Object for filtering
+ * useGetCardsQuery @returns { list: Cards[], size: number} if responseStatus 200
+ */
 export const cardsService = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({ baseUrl: baseCardsUrl }),

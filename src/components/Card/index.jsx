@@ -1,6 +1,11 @@
 import React from 'react';
 import { StyledCard, StyledCardLink, StyledCardMedia, StyleCardImage, StyleCardLabel, StyledCardH5 } from './Card.styled'
 
+/**
+ * Card Component
+ * @param {{card: Object}} props
+ * @returns a Card element based on the card Object from props 
+ */
 const Card = ({card}) => {
   if(!card || !card.title) return(<></>)
   const { image, label, title, content, link } = card

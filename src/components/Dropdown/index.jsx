@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect  } from 'react';
 import { StyledDropdown, StyledDropdownItem, StyledDropdownToggle, StyledDropdownList} from './Dropdown.styled'
 
+/**
+ * Dropdown component
+ * @param {{options: Object, title: String, onFieldsChange: function}} props
+ * @returns a dropdown component based on options Object provided on props
+ */
 const Dropdown = ({ options, title, onFieldsChange}) => {
 
   const [isActive, setIsActive] = useState(false);
@@ -25,11 +30,17 @@ const Dropdown = ({ options, title, onFieldsChange}) => {
 
   const toggleDropdown = () => {
     setIsActive(!isActive);
-    console.log(isActive);
   }
 
+
+  /*  
+   * Click handler for the dropdown items
+   * @param i: number is the index of the list item
+   * Triggers onFieldsChange prop sending the respective 
+   * field from the dropdownOptions components prop
+   */
   const handleClick = (i) => {
-    setIsActive(!isActive);
+    toggleDropdown()
     setSelectedIndex(i)
     onFieldsChange(options[dropdownOptions[i]])
   }
