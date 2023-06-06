@@ -1,6 +1,12 @@
 import { DOTS, usePagination } from './usePagination';
 import { StyledMobilePaginationItem, StyledPaginationArrow, StyledPaginationContainer, StyledPaginationItem } from './Paginmation.styled'
 
+/**
+ * Pagination Component
+ * @param {{onPageChange: Function, totalCount: number, siblingCount = 1: number, currentPage: number, pageSize: number}} props
+ * @param onPageChange returns a function with the @param { number } currentPage
+ * @returns a JSX Pagination element responsible for handling the pagination of a list
+ */
 const Pagination = props => {
   const {
     onPageChange,

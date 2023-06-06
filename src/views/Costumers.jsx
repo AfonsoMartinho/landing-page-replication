@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import { useGetCardsQuery } from '../services/cardsService';
 import Card from '../components/Card';
 import Dropdown from '../components/Dropdown';
@@ -8,8 +7,6 @@ import Loader from '../components/Loader'
 import { costumerIndustries, costumerRegions, costumerIntegrations } from '../constants/costumerFilters'
 import { StyledRow, StyledCol } from '../styles/GridSystem.styled'
 import mockCards from '../mockData/CardsList.data.json'
-
-
 import styled from "styled-components";
 
 // The Costumer wrapper component styled
@@ -26,10 +23,18 @@ const StyledCostumersWrapper = styled(StyledCol)`
   }
 `;
 
+// adding margin bottom on costumer fields wrapper
 const StyledCostumersFields = styled(StyledRow) `
   margin-bottom: 2rem;
 `
 
+/**
+ * Costumers React Component view
+ * Used for rendering costumers page
+ * fetches cards list with useGetCardsQuery()
+ * Handles pagination and api errors
+ * @returns jsx element containing costumers filters dropdowns and cards List
+ */
 function Costumers() {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentIndustry, setCurrentIndustry] = useState('');
@@ -51,7 +56,7 @@ function Costumers() {
     setCurrentPage(1)
   }, [currentIndustry, currentIntegration, currentRegion])
 
-  // renders the cards list or mock data 
+  // renders the cards list or mock data if no cards list available
   // handling the loader logic
   const CardsList = () => {
     const listToRender = (cardsList.length !== 0) ? cardsList : mockCards;
